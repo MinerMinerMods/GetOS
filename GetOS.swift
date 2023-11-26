@@ -5,7 +5,7 @@ struct Runtime{
     case watchOS
     case tvOS
     case visonOS
-    case Linux // may contain  Debian or Ubuntu Derivitaves but is not mentioned
+    case Linux // may contain  Debian or Ubuntu Derivitaves but is not Labeled
     case Windows
     case WindowsCygnus
     case WindowsMinGW
@@ -44,7 +44,11 @@ struct Runtime{
     case TBD // Unsure of owner
   }
   enum Archetecture{
-    case Intel //i386
-    // TODO: Finish this code
+// uses 'case <#HumanReadable#> //<#ID#>'
+    case Intel32 //i386
+    case Intel64 //x86_64
+    case ARM32 // arm
+    case ARM64 // arm64
+    // [•] TODO: Finish this code
   }
 }
